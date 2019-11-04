@@ -1,0 +1,24 @@
+.node circle {
+  stroke: #000;
+  stroke-width: 1.5px;
+  fill-opacity: .7;
+}
+
+.node:hover circle {
+  stroke: #bbb;
+  stroke-width: 1.5px;
+}
+
+line.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+.node text{
+  display: none;
+  font-weight: bold;
+}
+
+.node:hover text{
+  display: inline;
+}

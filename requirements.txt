@@ -1,0 +1,4 @@
+spacy==2.0.16
+networkx==2.2
+nltk==3.2.5
+flask==1.1.1

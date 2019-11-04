@@ -1,0 +1,4 @@
+Group 0: [u' Sean we should', u' Sean we will', u' Sean we may', u' we should', u' we will', u' we may']
+
+Group 1: [u' should', u' will', u' may']
+
