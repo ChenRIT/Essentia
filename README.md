@@ -23,8 +23,8 @@ https://github.com/rameshjesswani/Semantic-Textual-Similarity
 
 * Clone the word aligner repository to local.
 * Copy the *monolingualWordAligner* directory in the repository into `/PATH/TO/ESSENTIA/scripts/essentia/`.
-* Copy `/PATH/TO/ESSENTIA/scripts/essentia/wordAligner.py` into `/PATH/TO/ESSENTIA/scripts/essentia/monolingualWordAligner`.
-* Copy `/PATH/TO/ESSENTIA/scripts/essentia/wordsim.py` into `/PATH/TO/ESSENTIA/scripts/essentia/monolingualWordAligner`.
+* We reimplement the word aligner to make it run with Python 3. Copy all files under `/PATH/TO/ESSENTIA/scripts/essentia/word_aligner` into `/PATH/TO/ESSENTIA/scripts/essentia/monolingualWordAligner`.
+
 
 ## Run Essentia:
 * Run `python scripts/essentia/mine_para.py --dir /DIR/OF/INPUT/FILES --output /DIR/OF/OUTPUT/PARAPHRASES` at the root directory.
@@ -51,7 +51,11 @@ More details can be found in the following paper by Bo Pang et al:\
 [Syntax-based Alignment of Multiple Translations: Extracting Paraphrases and Generating New Sentences](https://www.aclweb.org/anthology/N03-1024.pdf)
 
 ## Run the baseline:
-* Install [benepar 0.1.2](https://pypi.org/project/benepar/)
+* Install [benepar 0.1.2](https://pypi.org/project/benepar/) and TensorFlow.
+* Download benepar resource benepar_en2:\
+  `>>> import nltk\
+   >>> import benepar\
+   >>> import benepar.download('benepar_en2')`
 * Run the algorithm on a single file as follows:\
 `python ./scripts/fsa_baseline/make_fsa_graph.py ../PATH/TO/FILE.txt alt`
 

@@ -142,7 +142,7 @@ def make_parse_trees(sents):
     nlp.add_pipe(BeneparComponent("benepar_en2"))
     tree_list = []
     for s in tqdm(sents):
-        span = list(nlp(unicode(s, "utf-8")).sents)[0]
+        span = list(nlp(s).sents)[0]
         root_node = Node('ROOT', span)
         node = span_to_tree(span)
         root_node.add_child(node)
