@@ -7,7 +7,7 @@ For more details, please check the following publication:\
 [Essentia: Mining Domain-Specific Paraphrases with Word-Alignment Graphs](https://arxiv.org/abs/1910.00637)
 
 # Environment setup:
-* Use Python 2.7.
+* Use Python 3.7.
 
 * Install packages specified in `requirements.txt`.
 
@@ -51,11 +51,11 @@ More details can be found in the following paper by Bo Pang et al:\
 [Syntax-based Alignment of Multiple Translations: Extracting Paraphrases and Generating New Sentences](https://www.aclweb.org/anthology/N03-1024.pdf)
 
 ## Run the baseline:
-* Install [benepar 0.1.2](https://pypi.org/project/benepar/) and TensorFlow.
-* Download benepar resource benepar_en2:\
-  `>>> import nltk\
-   >>> import benepar\
-   >>> import benepar.download('benepar_en2')`
+* Install [benepar 0.1.2](https://pypi.org/project/benepar/) and TensorFlow 1.13.1.
+* Download benepar resource benepar_en2 using Python:\
+  `>>> import nltk`\
+  `>>> import benepar`\
+  `>>> import benepar.download('benepar_en2')`
 * Run the algorithm on a single file as follows:\
 `python ./scripts/fsa_baseline/make_fsa_graph.py ../PATH/TO/FILE.txt alt`
 
